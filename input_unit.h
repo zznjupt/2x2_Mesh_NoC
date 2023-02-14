@@ -6,7 +6,7 @@
 
 typedef struct {
 	int flit_counter_next;
-	ID_t last_ID_text;
+	ID_t last_ID_next;
 	flit_t write_data;
 	flit_buffer_internal_wire flit_buffer_wire[PORT_COUNT];
 } input_unit_internal_wire;

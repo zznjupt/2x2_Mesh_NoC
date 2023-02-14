@@ -52,6 +52,11 @@
 			<location>C:/Users/ZZ/Desktop/HLS/2D_Mesh_Interconnection_NoC/flit_buffer.h</location>
 		</link>
 		<link>
+			<name>source/input_unit.cpp</name>
+			<type>1</type>
+			<location>C:/Users/ZZ/Desktop/HLS/2D_Mesh_Interconnection_NoC/input_unit.cpp</location>
+		</link>
+		<link>
 			<name>source/input_unit.h</name>
 			<type>1</type>
 			<location>C:/Users/ZZ/Desktop/HLS/2D_Mesh_Interconnection_NoC/input_unit.h</location>
