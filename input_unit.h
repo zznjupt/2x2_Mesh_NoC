@@ -28,7 +28,7 @@ public:
 		bool   in_flit_valid, 				// input
 		bool   read[PORT_COUNT],			// input
 		flit_t out_flit_data[PORT_COUNT],	// output
-		bool   out_flit_valid[POR]
+		bool   out_flit_valid[PROT_COUNT]
 	);
 };
 
