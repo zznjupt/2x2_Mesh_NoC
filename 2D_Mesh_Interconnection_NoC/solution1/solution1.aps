@@ -13,7 +13,7 @@
     <DownStreamTool name="vivado"/>
   </downStreamTool>
   <targetInfo>
-    <TargetInfo value="xczu4ev:-sfvc784:-1-i"/>
+    <TargetInfo value="xczu4eg:-sfvc784:-1-i"/>
   </targetInfo>
   <libraryList>
     <library name="DefaultPlatform" value="xilinx/zynquplus/zynquplus"/>

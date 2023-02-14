@@ -4,7 +4,7 @@
     <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/a.exe"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="2D_Mesh_Interconnection_NoC"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="cdt.managedbuild.config.gnu.exe.debug.534559020"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="cdt.managedbuild.config.gnu.exe.debug.1528830299"/>
     <stringAttribute key="org.eclipse.cdt.launch.WORKING_DIRECTORY" value="C:\Users\ZZ\Desktop\HLS\2D_Mesh_Interconnection_NoC\2D_Mesh_Interconnection_NoC"/>
     <booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
     <stringAttribute key="org.eclipse.debug.core.source_locator_id" value="org.eclipse.cdt.debug.core.sourceLocator"/>

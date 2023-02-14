@@ -37,21 +37,6 @@
 			<location>C:/Users/ZZ/Desktop/HLS/2D_Mesh_Interconnection_NoC/2D_Mesh_Interconnection_NoC/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ap_int.h</name>
-			<type>1</type>
-			<location>C:/D/Xilinx/Vitis_HLS/2021.2/include/ap_int.h</location>
-		</link>
-		<link>
-			<name>.reference/hls_stream.h</name>
-			<type>1</type>
-			<location>C:/D/Xilinx/Vitis_HLS/2021.2/include/hls_stream.h</location>
-		</link>
-		<link>
-			<name>.reference/hls_stream_thread_safe.h</name>
-			<type>1</type>
-			<location>C:/D/Xilinx/Vitis_HLS/2021.2/include/hls_stream_thread_safe.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>C:/Users/ZZ/Desktop/HLS/2D_Mesh_Interconnection_NoC/2D_Mesh_Interconnection_NoC/solution1/.tcls</location>
@@ -65,6 +50,11 @@
 			<name>source/flit_buffer.h</name>
 			<type>1</type>
 			<location>C:/Users/ZZ/Desktop/HLS/2D_Mesh_Interconnection_NoC/flit_buffer.h</location>
+		</link>
+		<link>
+			<name>source/input_unit.h</name>
+			<type>1</type>
+			<location>C:/Users/ZZ/Desktop/HLS/2D_Mesh_Interconnection_NoC/input_unit.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

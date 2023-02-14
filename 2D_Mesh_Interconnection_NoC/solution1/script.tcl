@@ -6,8 +6,9 @@
 open_project 2D_Mesh_Interconnection_NoC
 add_files def.h
 add_files flit_buffer.h
+add_files input_unit.h
 open_solution "solution1" -flow_target vivado
-set_part {xczu4ev-sfvc784-1-i}
+set_part {xczu4eg-sfvc784-1-i}
 create_clock -period 10 -name default
 #source "./2D_Mesh_Interconnection_NoC/solution1/directives.tcl"
 #csim_design

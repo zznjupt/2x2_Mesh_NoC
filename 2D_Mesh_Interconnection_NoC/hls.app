@@ -3,6 +3,7 @@
   <files>
     <file name="def.h" sc="0" tb="false" cflags="" blackbox="false" csimflags=""/>
     <file name="flit_buffer.h" sc="0" tb="false" cflags="" blackbox="false" csimflags=""/>
+    <file name="input_unit.h" sc="0" tb="false" cflags="" blackbox="false" csimflags=""/>
   </files>
   <solutions>
     <solution name="solution1" status="active"/>
