@@ -48,5 +48,58 @@ void input_unit::update_combinational(
 	}
 
 	if(in_flit_valid == true)
-		output_wire->last_ID_next = last_ID
+		output_wire->flit_counter_next =
+		(flit_counter == FLITS_PER_PACKET-1 ? 0:flit_counter+1);
+	else
+		output_wire->flit_counter_next = flit_counter;
+
+	if(flit_counter == 0 && in_flit_valid == true) { // Decide new VC channel
+		output_wire->last_ID_next = write_channel;
+	} else { // keep old VC channel
+		output_wire->last_ID_next = last_ID;
+	}
+
+	bool VC_buffer_write[PROT_COUNT];
+	for(int i = 0; i < PORT_COUNT; i++) {
+#pragma HLS UNROLL
+		if(in_flit_valid == true && write_channel == i)
+			VC_buffer_write[i] = true;
+		else
+			VC_buffer_write[i] - false;
+	}
+
+	for(int i = 0; i < PORT_COUNT; i++) {
+#pragma HLS UNROLL
+		VC_niffer[i].update_combinational(
+			in_flit_data,
+			read[i],
+			VC_buffer_write[i],
+			&(output_wire->flit_buffer_wire[i])
+		);
+	}
+
+	int VC_full_temp = false;
+	for(iny i = 0; i < PORT_COUNT; i++) {
+#pragma HLS UNROLL
+		VC_full_temp |= VC_buffer[i].full();
+	}
+
+	*VC_full = VC_full_temp;
+}
+
+void input_unit::update_sequential(
+	input_unit_internal_wire input_wire
+) {
+#pragma HLS INLINE
+
+	last_ID = input_wire.last_ID_next;
+	flit_counter = input_wire.flit_counter_next;
+
+	for(i = 0; i < PORT_COUNT; i++) {
+#pragma HLS UNROLL
+		VC_buffer[i].update_sequential(
+			input_wire.flit_buffer_wire[i]
+		);
+	}
+
 }
