@@ -24,11 +24,18 @@ public:
 	input_unit();
 
 	void update_combinational(
-		flit_t in_flit_data, 				// input
-		bool   in_flit_valid, 				// input
-		bool   read[PORT_COUNT],			// input
-		flit_t out_flit_data[PORT_COUNT],	// output
-		bool   out_flit_valid[PROT_COUNT]
+		flit_t in_flit_data, 					// input
+		bool   in_flit_valid, 					// input
+		bool   read[PORT_COUNT],				// input
+
+		flit_t out_flit_data[PORT_COUNT],		// output
+		bool   out_flit_valid[PROT_COUNT], 		// output
+		bool*  VC_full,							// output
+		input_unit_internal_wire* output_wire 	// output
+	);
+
+	void update_sequential(
+		input_uint_internal_wire  input_wire
 	);
 };
 
